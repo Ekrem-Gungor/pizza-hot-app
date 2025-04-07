@@ -1,12 +1,14 @@
 const bodyParser = require("body-parser");
 const express = require("express");
 const cors = require("cors");
+const path = require("path");
 const fs = require("fs/promises");
 
 const app = express();
 
 app.use(bodyParser.json());
 app.use(express.static("public"));
+app.use("/images", express.static(path.join(__dirname, "public/images")));
 
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
