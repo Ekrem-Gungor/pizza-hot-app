@@ -14,7 +14,7 @@ export default function Pizza({ pizza }) {
     <div className="col">
       <div className="card item">
         <img
-          src={`http://localhost:3000/images/${pizza.image}`}
+          src={`https://pizza-hot-app.onrender.com/images/${pizza.image}`}
           alt={pizza.title}
           className="card-img-top p-2 p-md-3 border-bottom"
         />
