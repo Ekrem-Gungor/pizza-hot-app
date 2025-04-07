@@ -1,1 +1,1 @@
-# BTK Akademi React Kursu
+# pizza-hot-app
