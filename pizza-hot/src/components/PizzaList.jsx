@@ -10,7 +10,7 @@ const option = {
 
 export default function PizzaList() {
   const { data, isloading, error } = useFetch(
-    "http://localhost:3000/pizzas",
+    "https://pizza-hot-app.onrender.com/pizzas",
     option,
     []
   );

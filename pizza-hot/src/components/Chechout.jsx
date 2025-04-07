@@ -16,7 +16,7 @@ export default function Checkout() {
   const { uiProgress, hideCheckout } = useContext(UIContext);
 
   const { data, isloading, error, SendRequest } = useFetch(
-    "http://localhost:3000/orders",
+    "https://pizza-hot-app.onrender.com/orders",
     option
   );
 
